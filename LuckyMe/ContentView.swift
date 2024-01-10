@@ -28,6 +28,7 @@ struct ContentView: View {
                     fillArray()
                     arrToVar()
                     dato()
+                    test()
                 }
                 
             } label: {
@@ -41,6 +42,22 @@ struct ContentView: View {
         }
         .padding()
     }
+    
+    func test(){
+        if kjonn == "F" {
+            if fAar < 13 {kjonn = "Ung Jente"
+            } else if fAar < 20  {kjonn = "Tennårings Jente"
+            } else if fAar < 55  {kjonn = "Kvinne"
+            } else if fAar >= 55 {kjonn = "Gammel Kjærring"
+            }
+        } else if kjonn == "M"{
+            if fAar < 13 {kjonn = "Ung Gutt"
+            } else if fAar < 20  {kjonn = "Tennårings Gutt"
+            } else if fAar < 55  {kjonn = "Mann"
+            } else if fAar >= 55 {kjonn = "Gammel Gubbe"
+            }
+        }
+    }
    
     func dato() {
         let fmt = ISO8601DateFormatter()
@@ -52,7 +69,7 @@ struct ContentView: View {
         fAar = diffs.year!
         fMnd = diffs.month!
         
-        print(fAar, fMnd)
+      //  print(fAar, fMnd)
     }
     
     //****
@@ -96,10 +113,10 @@ struct ContentView: View {
        // var yourNumber = 9
               if yourNumber % 2 == 0 {
               // Even Number
-                kjonn = "Kvinne"
+                kjonn = "F"
             } else {
               // Odd Number
-                kjonn = "Mann"
+                kjonn = "M"
             }
          
         
