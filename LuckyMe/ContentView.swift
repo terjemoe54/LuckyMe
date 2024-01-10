@@ -13,6 +13,7 @@ struct ContentView: View {
     @State var fodtStr: String = ""
     @State var fAar: Int = 0
     @State var fMnd: Int = 0
+    @State var kjonn: String = ""
     
     var body: some View {
         VStack {
@@ -23,9 +24,11 @@ struct ContentView: View {
                 .border(Color.black)
             
             Button{
-                fillArray()
-                arrToVar()
-                dato()
+                if pnr.count >= 11 {
+                    fillArray()
+                    arrToVar()
+                    dato()
+                }
                 
             } label: {
                 Text("Modulus 11")
@@ -33,11 +36,12 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .background(Color.blue)
             }
-             Text("Alder: \(fAar) År og \(fMnd) Måneder")
+            Text("Dette er en \(kjonn)")
+            Text("Alder: \(fAar) År og \(fMnd) Måneder")
         }
         .padding()
     }
-    //*******
+   
     func dato() {
         let fmt = ISO8601DateFormatter()
         //let date1 = fmt.date(from: "1954-05-16T19:20:42+0000")!
@@ -86,6 +90,19 @@ struct ContentView: View {
         } else {
             fodtStr = String("20\(a5!)\(a6!)-\(a3!)\(a4!)-\(a1!)\(a2!)T19:20:46+0000")
         }
+        
+        // Sette Kjønn
+        var yourNumber = Int(a9!)
+       // var yourNumber = 9
+              if yourNumber % 2 == 0 {
+              // Even Number
+                kjonn = "Kvinne"
+            } else {
+              // Odd Number
+                kjonn = "Mann"
+            }
+         
+        
         
         // Utregning første kontrollsiffer til modulus 11
         let fks1 = a1! * 3

@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct TestFil: View {
+    var yourNumber = 9
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if yourNumber % 2 == 0 {
+          // Even Number
+            Text("Even")
+        } else {
+          // Odd Number
+            Text("odd")
+        }
         
     }
     
