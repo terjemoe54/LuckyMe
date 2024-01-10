@@ -3,4 +3,54 @@
    uuid = "D7F44EBA-0739-432F-A75C-29B3E21FE22D"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D44B8A1-6EC3-4DE4-8031-158E9917C2ED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LuckyMe/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "arrToVar()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6D44B8A1-6EC3-4DE4-8031-158E9917C2ED - 4ac6b776794309b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LuckyMe.ContentView.arrToVar() -&gt; ()"
+                  moduleName = "LuckyMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/terjemoe/Desktop/Codewithcris/iOS%20Databases%202023/MineFiler/LuckyMe/LuckyMe/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "2016">
+               </Location>
+               <Location
+                  uuid = "6D44B8A1-6EC3-4DE4-8031-158E9917C2ED - 4ac6b776794309b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LuckyMe.ContentView.arrToVar() -&gt; ()"
+                  moduleName = "LuckyMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/terjemoe/Desktop/Codewithcris/iOS%20Databases%202023/MineFiler/LuckyMe/LuckyMe/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "1988">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

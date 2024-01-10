@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8D4F2692B4DA69200D758D8 /* TestFil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D4F2682B4DA69200D758D8 /* TestFil.swift */; };
 		A8F613532B4AA6E500944302 /* LuckyMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F613522B4AA6E500944302 /* LuckyMeApp.swift */; };
 		A8F613552B4AA6E500944302 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F613542B4AA6E500944302 /* ContentView.swift */; };
 		A8F613572B4AA6E600944302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F613562B4AA6E600944302 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8D4F2682B4DA69200D758D8 /* TestFil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFil.swift; sourceTree = "<group>"; };
 		A8F6134F2B4AA6E500944302 /* LuckyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F613522B4AA6E500944302 /* LuckyMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyMeApp.swift; sourceTree = "<group>"; };
 		A8F613542B4AA6E500944302 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				A8F613542B4AA6E500944302 /* ContentView.swift */,
 				A8F613562B4AA6E600944302 /* Assets.xcassets */,
 				A8F613582B4AA6E600944302 /* Preview Content */,
+				A8D4F2682B4DA69200D758D8 /* TestFil.swift */,
 			);
 			path = LuckyMe;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				A8F613552B4AA6E500944302 /* ContentView.swift in Sources */,
 				A8F613532B4AA6E500944302 /* LuckyMeApp.swift in Sources */,
+				A8D4F2692B4DA69200D758D8 /* TestFil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

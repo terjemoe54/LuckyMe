@@ -10,7 +10,10 @@ import SwiftUI
 struct ContentView: View {
     @State var myArray:[String] = []
     @State var pnr: String = ""
- 
+    @State var fodtStr: String = ""
+    @State var fAar: Int = 0
+    @State var fMnd: Int = 0
+    
     var body: some View {
         VStack {
             Text("Person Nr:").font(.largeTitle)
@@ -20,28 +23,50 @@ struct ContentView: View {
                 .border(Color.black)
             
             Button{
-            fillArray()
-            arrToVar()
-           } label: {
+                fillArray()
+                arrToVar()
+                dato()
+                
+            } label: {
                 Text("Modulus 11")
                     .padding()
                     .foregroundColor(.white)
                     .background(Color.blue)
             }
-          //  Text("Pnr:\(pnr) \(pnr)")
+             Text("Alder: \(fAar) År og \(fMnd) Måneder")
         }
         .padding()
     }
+    //*******
+    func dato() {
+        let fmt = ISO8601DateFormatter()
+        //let date1 = fmt.date(from: "1954-05-16T19:20:42+0000")!
+        let date1 = fmt.date(from: fodtStr)!
+        let date2 = fmt.date(from: "2024-01-10T19:20:46+0000")!
+        let diffs = Calendar.current.dateComponents([.year,.month,.day], from: date1, to: date2)
+        
+        fAar = diffs.year!
+        fMnd = diffs.month!
+        
+        print(fAar, fMnd)
+    }
+    
+    //****
+    
+    
+    //*******
+    
+    
     
     func fillArray(){
         myArray.removeAll()
         let str = pnr
-              
+        
         for (_, element) in str.enumerated(){
             myArray.append(String(element))
         }
     }
-     
+    
     func arrToVar() {
         // Konverterer alle tall fra arrayen til variabler av type Integer
         let a1 = Int(myArray[0])
@@ -53,7 +78,15 @@ struct ContentView: View {
         let a7 = Int(myArray[6])
         let a8 = Int(myArray[7])
         let a9 = Int(myArray[8])
-  
+        
+        // Lager string med fødselsdato for utregning
+        var fnaar = String("\(a5!)\(a6!)")
+        if Int(fnaar)! > 24 {
+            fodtStr = String("19\(a5!)\(a6!)-\(a3!)\(a4!)-\(a1!)\(a2!)T19:20:46+0000")
+        } else {
+            fodtStr = String("20\(a5!)\(a6!)-\(a3!)\(a4!)-\(a1!)\(a2!)T19:20:46+0000")
+        }
+        
         // Utregning første kontrollsiffer til modulus 11
         let fks1 = a1! * 3
         let fks2 = a2! * 7
@@ -92,7 +125,7 @@ struct ContentView: View {
             pnr = pnr + String(ks1) + String(ks2)
         }
     }
- }
+}
  
  #Preview {
     ContentView()
