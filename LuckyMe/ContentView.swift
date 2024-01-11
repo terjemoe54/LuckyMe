@@ -11,9 +11,12 @@ struct ContentView: View {
     @State var myArray:[String] = []
     @State var pnr: String = ""
     @State var fodtStr: String = ""
+    @State var endDate: String = ""
     @State var fAar: Int = 0
     @State var fMnd: Int = 0
-    @State var kjonn: String = ""
+    @State var fDay: Int = 0
+    @State var kjonn: String = "Tanya"
+    @State var bilde: String = "tanya"
     
     var body: some View {
         VStack {
@@ -22,64 +25,70 @@ struct ContentView: View {
             TextField("Fødselsnummer 11 siffer ",text: $pnr)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .border(Color.black)
+                .padding(.leading,75).keyboardType(.numberPad)
             
             Button{
-                if pnr.count >= 11 {
+                if pnr.count == 11 {
                     fillArray()
                     arrToVar()
                     dato()
-                    test()
+                    alderKlasse()
                 }
                 
             } label: {
-                Text("Modulus 11")
+                Text("Go")
                     .padding()
                     .foregroundColor(.white)
                     .background(Color.blue)
             }
             Text("Dette er en \(kjonn)")
-            Text("Alder: \(fAar) År og \(fMnd) Måneder")
+            Text("Alder: \(fAar) År ,\(fMnd) Måneder og \(fDay) Dager")
         }
         .padding()
+        Image(bilde).resizable()
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+        
     }
     
-    func test(){
+    func alderKlasse(){
+        // gir textfeltet kønn og beskrivelse (eks. kvinne mann ung gutt ung jente)
+        
         if kjonn == "F" {
-            if fAar < 13 {kjonn = "Ung Jente"
-            } else if fAar < 20  {kjonn = "Tennårings Jente"
-            } else if fAar < 55  {kjonn = "Kvinne"
-            } else if fAar >= 55 {kjonn = "Gammel Kjærring"
+            
+            if fAar < 13 {kjonn = "Ung Jente"; bilde = "ung_jente"
+            } else if fAar < 20  {kjonn = "Tennårings Jente"; bilde = "teen_jente"
+            } else if fAar < 55  {kjonn = "Kvinne"; bilde = "dame"
+            } else if fAar >= 55 {kjonn = "Gammel Kjærring"; bilde = "gammel_dame"
             }
         } else if kjonn == "M"{
-            if fAar < 13 {kjonn = "Ung Gutt"
-            } else if fAar < 20  {kjonn = "Tennårings Gutt"
-            } else if fAar < 55  {kjonn = "Mann"
-            } else if fAar >= 55 {kjonn = "Gammel Gubbe"
+            if fAar < 13 {kjonn = "Ung Gutt"; bilde = "ung_gutt"
+            } else if fAar < 20  {kjonn = "Tennårings Gutt"; bilde = "teen_gutt"
+            } else if fAar < 55  {kjonn = "Mann"; bilde = "mann"
+            } else if fAar >= 55 {kjonn = "Gammel Gubbe"; bilde = "gammel_gubbe"
             }
         }
     }
-   
+    
     func dato() {
+      // Regner ut fra og tildato for alder
+        let year = Calendar.current.component(.year, from: Date())
+        let month = Calendar.current.component(.month, from: Date())
+        let day = Calendar.current.component(.day, from: Date())
+        
         let fmt = ISO8601DateFormatter()
-        //let date1 = fmt.date(from: "1954-05-16T19:20:42+0000")!
         let date1 = fmt.date(from: fodtStr)!
-        let date2 = fmt.date(from: "2024-01-10T19:20:46+0000")!
+        let endDate = String("\(year)-\(month)-\(day)T00:00:00+0000")
+        let date2 = fmt.date(from: endDate)!
         let diffs = Calendar.current.dateComponents([.year,.month,.day], from: date1, to: date2)
         
         fAar = diffs.year!
         fMnd = diffs.month!
-        
-      //  print(fAar, fMnd)
-    }
-    
-    //****
-    
-    
-    //*******
-    
-    
+        fDay = diffs.day!
+      }
     
     func fillArray(){
+        // Fyller arrayen med tall fra strengen pnr
         myArray.removeAll()
         let str = pnr
         
@@ -87,6 +96,7 @@ struct ContentView: View {
             myArray.append(String(element))
         }
     }
+    
     
     func arrToVar() {
         // Konverterer alle tall fra arrayen til variabler av type Integer
@@ -101,26 +111,22 @@ struct ContentView: View {
         let a9 = Int(myArray[8])
         
         // Lager string med fødselsdato for utregning
-        var fnaar = String("\(a5!)\(a6!)")
+        let fnaar = String("\(a5!)\(a6!)")
         if Int(fnaar)! > 24 {
-            fodtStr = String("19\(a5!)\(a6!)-\(a3!)\(a4!)-\(a1!)\(a2!)T19:20:46+0000")
+            fodtStr = String("19\(a5!)\(a6!)-\(a3!)\(a4!)-\(a1!)\(a2!)T00:00:00+0000")
         } else {
-            fodtStr = String("20\(a5!)\(a6!)-\(a3!)\(a4!)-\(a1!)\(a2!)T19:20:46+0000")
+            fodtStr = String("20\(a5!)\(a6!)-\(a3!)\(a4!)-\(a1!)\(a2!)T00:00:00+0000")
         }
-        
-        // Sette Kjønn
-        var yourNumber = Int(a9!)
-       // var yourNumber = 9
-              if yourNumber % 2 == 0 {
-              // Even Number
-                kjonn = "F"
-            } else {
-              // Odd Number
-                kjonn = "M"
-            }
-         
-        
-        
+       
+        let yourNumber = Int(a9!)
+        // var yourNumber = 9
+        if yourNumber % 2 == 0 {
+            // Even Number
+            kjonn = "F"
+        } else {
+            // Odd Number
+            kjonn = "M"
+        }
         // Utregning første kontrollsiffer til modulus 11
         let fks1 = a1! * 3
         let fks2 = a2! * 7
@@ -154,13 +160,13 @@ struct ContentView: View {
         let skSum2 = skSum1 / 11
         let skSum3 = skSum2 * 11
         let skSum4 = skSum1 - skSum3
-        var ks2 = 11 - skSum4
+        let ks2 = 11 - skSum4
         if pnr.count < 11 {
             pnr = pnr + String(ks1) + String(ks2)
         }
     }
 }
- 
- #Preview {
+
+#Preview {
     ContentView()
- }
+}
