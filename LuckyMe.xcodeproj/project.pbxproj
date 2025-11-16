@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8F613532B4AA6E500944302 /* LuckyMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F613522B4AA6E500944302 /* LuckyMeApp.swift */; };
-		A8F613552B4AA6E500944302 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F613542B4AA6E500944302 /* ContentView.swift */; };
+		A86E04052BB01511006EE522 /* StarSignDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E04042BB01511006EE522 /* StarSignDetailView.swift */; };
+		A893ED582BB1750D00C61B40 /* StarSignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893ED572BB1750D00C61B40 /* StarSignData.swift */; };
+		A893ED5A2BB1C3C800C61B40 /* ChineseZodiacDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893ED592BB1C3C800C61B40 /* ChineseZodiacDetailView.swift */; };
+		A893ED5C2BB1C3FA00C61B40 /* ChineseZodiacData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893ED5B2BB1C3FA00C61B40 /* ChineseZodiacData.swift */; };
+		A8DB60132B8F440D005396EC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB60122B8F440D005396EC /* Utilities.swift */; };
+		A8F613532B4AA6E500944302 /* StartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F613522B4AA6E500944302 /* StartApp.swift */; };
+		A8F613552B4AA6E500944302 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F613542B4AA6E500944302 /* MainView.swift */; };
 		A8F613572B4AA6E600944302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F613562B4AA6E600944302 /* Assets.xcassets */; };
 		A8F6135A2B4AA6E600944302 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F613592B4AA6E600944302 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A86E04042BB01511006EE522 /* StarSignDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSignDetailView.swift; sourceTree = "<group>"; };
+		A893ED572BB1750D00C61B40 /* StarSignData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSignData.swift; sourceTree = "<group>"; };
+		A893ED592BB1C3C800C61B40 /* ChineseZodiacDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseZodiacDetailView.swift; sourceTree = "<group>"; };
+		A893ED5B2BB1C3FA00C61B40 /* ChineseZodiacData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseZodiacData.swift; sourceTree = "<group>"; };
+		A8DB60122B8F440D005396EC /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		A8F6134F2B4AA6E500944302 /* LuckyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8F613522B4AA6E500944302 /* LuckyMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyMeApp.swift; sourceTree = "<group>"; };
-		A8F613542B4AA6E500944302 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8F613522B4AA6E500944302 /* StartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartApp.swift; sourceTree = "<group>"; };
+		A8F613542B4AA6E500944302 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A8F613562B4AA6E600944302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8F613592B4AA6E600944302 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +61,13 @@
 		A8F613512B4AA6E500944302 /* LuckyMe */ = {
 			isa = PBXGroup;
 			children = (
-				A8F613522B4AA6E500944302 /* LuckyMeApp.swift */,
-				A8F613542B4AA6E500944302 /* ContentView.swift */,
+				A8F613522B4AA6E500944302 /* StartApp.swift */,
+				A8F613542B4AA6E500944302 /* MainView.swift */,
+				A8DB60122B8F440D005396EC /* Utilities.swift */,
+				A86E04042BB01511006EE522 /* StarSignDetailView.swift */,
+				A893ED572BB1750D00C61B40 /* StarSignData.swift */,
+				A893ED592BB1C3C800C61B40 /* ChineseZodiacDetailView.swift */,
+				A893ED5B2BB1C3FA00C61B40 /* ChineseZodiacData.swift */,
 				A8F613562B4AA6E600944302 /* Assets.xcassets */,
 				A8F613582B4AA6E600944302 /* Preview Content */,
 			);
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8F613552B4AA6E500944302 /* ContentView.swift in Sources */,
-				A8F613532B4AA6E500944302 /* LuckyMeApp.swift in Sources */,
+				A86E04052BB01511006EE522 /* StarSignDetailView.swift in Sources */,
+				A893ED5C2BB1C3FA00C61B40 /* ChineseZodiacData.swift in Sources */,
+				A893ED5A2BB1C3C800C61B40 /* ChineseZodiacDetailView.swift in Sources */,
+				A8DB60132B8F440D005396EC /* Utilities.swift in Sources */,
+				A8F613552B4AA6E500944302 /* MainView.swift in Sources */,
+				A893ED582BB1750D00C61B40 /* StarSignData.swift in Sources */,
+				A8F613532B4AA6E500944302 /* StartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +295,13 @@
 				DEVELOPMENT_TEAM = 4LR68777XL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WhoAmI;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +326,13 @@
 				DEVELOPMENT_TEAM = 4LR68777XL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WhoAmI;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
