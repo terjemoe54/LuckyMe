@@ -4,6 +4,7 @@
 //  Med GitIgnore nytt navn på app MyAstro
 //  Created by Terje Moe on 07/01/2024.
 // Denne bruker ikkeno
+// Ny Github 01.01.2026
 
 import SwiftUI
 
