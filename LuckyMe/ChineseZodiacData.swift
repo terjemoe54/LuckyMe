@@ -11,41 +11,43 @@ extension ChineseZodiacDetailView {
   
     func chineseZodiacInfo(chZodiacText:String) {
         switch chZodiacText {
-        case "Roster":
-            chineseZodiacInfo = "Rooster.\nBirth years(1921, 1933, 1945, 1957, 1969, 1981, 1993, 2005, 2017).\nNext year of the Rooster 2029.\nPersonality:\n (Empathetic, Creative, Reliable, Consistent, Boastful).\nMost compatible with Dragon.\nLeast compatible with: Rabbit."
+        case "Hane":
+            chineseZodiacInfo = "Hane.\nFødselsår(1921, 1933, 1945, 1957, 1969, 1981, 1993, 2005, 2017).\nNeste år av Hanen 2029.\nPersonlighet:\n (Empatisk, Religiøs). kompatibel med Dragen.\nMinst kompatibel med: Kanin."
                         
-        case "Dog":
-            chineseZodiacInfo = "Dog.\nBirth years(1934, 1946, 1958, 1970, 1982, 1994, 2006, 2018).\nNext year of the Dog 2030.\nPersonality:\n (Loyal, Honest, Generous, Playful, Stubborn).\nMostcompatible with Rabbit.\nLeast compatible with Dragon."
+        case "Hund":
+            chineseZodiacInfo = "Hund.\nFødselsår(1934, 1946, 1958, 1970, 1982, 1994, 2006, 2018).\nNeste år av Hunden 2030.\nPersonlighet:\n (lojal, ærlig, sjenerøs,leken, sta).\n, kompatibel med Kanin.\nMinst kompatibel med: Drage."
             
-        case "Pig":
-            chineseZodiacInfo = "Pig.\nBirth years(1935, 1947, 1959, 1971, 1983, 1995, 2007, 2019).\nNext year of the Pig 2031.\nPersonality\n (Happy, Generous, Logical, Loving, Short-tempered).\nMost compatible with Tiger.\nLeast compatible with Snake."
+        case "Gris":
+            chineseZodiacInfo = "Gris.\nFødselsår(1935, 1947, 1959, 1971, 1983, 1995, 2007, 2019).\nNeste år av grisen 2031.\nPersonlighet\n (glad, sjenerøs, logisk, kjærlig, hissig).\n, kompatibel med Tiger.\nMinst kompatibel med Slange."
             
-        case "Rat":
-            chineseZodiacInfo = "Rat.\nBirth years(1912, 1924, 1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020).\nNext year of the Rat 2032.\nPersonality:\n (Frugal, Ambitious, Honest, Charming, Critical).\nMost compatible with Ox.\nLeast compatible with Horse."
             
-        case "Ox":
-            chineseZodiacInfo = "Ox.\nBirth years(1913, 1925, 1937, 1949, 1961, 1973, 1985, 1997, 2009, 2021).\nNext year of the Ox 2033.\nPersonality:\n (Perseverant, Patient, Hardworking, Determined, Stubborn).\nMost compatible with Rat.\nLeast compatible with Sheep."
+        case "Rotte":
+            chineseZodiacInfo = "Rotte.\nFødselsår(1912, 1924, 1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020).\nNeste år med rotten 2032.\nPersonlighet:, Ambitiøs, sjarmerende, ærlig, kritisk).\nMest kompatibel med Okse.\nMinst kompatibel med Hest."
             
+        case "Okse":
+            chineseZodiacInfo = "Okse.\nFødselsår(1913, 1925, 1937, 1949, 1961, 1973, 1985, 1997, 2009, 2021).\nNeste år av Oksen 2033.\nPersonlighet: \n (tålmodig,hardt arbeidsom, sta).\nMest kompatibel med Rotte.\nMinst kompatibel med sau."
+              
         case "Tiger":
-            chineseZodiacInfo = "Tiger.\nBirth years(1914, 1926, 1938, 1950, 1962, 1974, 1986, 1998, 2010, 2022).\nNext year of the Tiger 2034).\nPersonality:\n (Courageous, Candid, Confident, Adventurous, Selfish).\nMost compatible with Pig.\nLeast compatible with Monkey."
+            chineseZodiacInfo = "Tiger.\nFødselsår(1914, 1926, 1938, 1950, 1962, 1974, 1986, 1998, 2010, 2022).\nNeste år av Tiger 2034).\nPersonlighet:\n (Nyskjerrig, Selvsikker,Eventyrlysten, Egoistisk).\nMest kompatibel med Gris.\nMinst kompatibel med Ape."
+              
+        case "Kanin":
+            chineseZodiacInfo = "Kanin.\nFødselsår(1915, 1927, 1939, 1951, 1963, 1975, 1987, 1999, 2011, 2023).\nNeste år av kaninen 2035.\nPersonlighet:\n kjærlig, intelligent, nøysom, heldig).\nMest kompatibel med Dog.\nMinst kompatibel med Hane."
+                
+        case "Drage":
+            chineseZodiacInfo = "Drage.\nFødselsår(1928, 1940, 1952, 1964, 1976, 1988, 2000, 2012, 2024).\nNeste år av Dragen 2036.\nPersonlighet:\n (Sterk, Temperamangfull, Ambisiøs, Selvstendig).\nMest kompatibelt med Hane.\nMinst kompatibel med Hund."
             
-        case "Rabbit":
-            chineseZodiacInfo = "Rabbit.\nBirth years(1915, 1927, 1939, 1951, 1963, 1975, 1987, 1999, 2011, 2023).\nNext year of the Rabbit 2035.\nPersonality:\n Gentle, Intelligent, Loving, Articulate, Lucky).\nMost compatible with Dog.\nLeast compatible with Rooster."
+        case "Slange":
+            chineseZodiacInfo = "Slange.\nFødselsår(1917, 1929, 1941, 1953, 1965, 1977, 1989, 2001, 2013).\nNeste år av Slange 2025.\nPersonlighet:\n (Ambisiøs, Klok, Intens, Besluttsom).\nkompatibel med Ape.\nMinst kompatibel med Gris."
             
-        case "Dragon":
-            chineseZodiacInfo = "Dragon.\nBirth years(1928, 1940, 1952, 1964, 1976, 1988, 2000, 2012, 2024).\nNext year of the Dragon 2036.\nPersonality:\n (Strong, Independent, Fortunate, Ambitious, Temperamental).\nMost compatible with Rooster.\nLeast compatible with Dog."
-            
-        case "Snake":
-            chineseZodiacInfo = "Snake.\nBirth years(1917, 1929, 1941, 1953, 1965, 1977, 1989, 2001, 2013).\nNext year of the Snake 2025.\nPersonality:\n (Ambitious, Wise, Intense, Determined, Possessive).\nMost compatible with Monkey.\nLeast compatible with Pig."
-            
-        case "Horse":
-            chineseZodiacInfo = "Horse.\nBirth years(1918, 1930, 1942, 1954, 1966, 1978, 1990, 2002, 2014).\nNext year of the Horse 2026.\nPersonality:\n (Energetic, Free, Popular,Positive,Impatient).\nMost compatible with Sheep.\nLeast compatible with Rat."
-            
-        case "Sheep":
-            chineseZodiacInfo = "Sheep.\nBirth years(1919, 1931, 1943, 1955, 1967, 1979, 1991, 2003, 2015).\nNext year of the Sheep 2027.\nPersonality:\n (Kind, Patient, Persuasive, Gentle, Timid).\nMost compatible with Horse.\nLeast compatible with: Ox."
-            
-        case "Monkey":
-            chineseZodiacInfo = "Monkey.\nBirth years(1920, 1932, 1944, 1956, 1968, 1980, 1992, 2004, 2016).\nNext year of the Monkey 2028.\nPersonality:\n (Intelligent, Influential, Curious, Passionate, Easily Discouraged).\nMost compatible with Snake\nLeast compatible with Tiger."
+        case "Hest":
+            chineseZodiacInfo = "Hest.\nFødselsår(1918, 1930, 1942, 1954, 1966, 1978, 1990, 2002, 2014).\nNeste år av Hesten 2026.\nPersonlighet:\n (Energisk, Populær, Possitiv,Utålmodig). \nKompatibel med sauer.\nMinst kompatibel med Rotte."
+               
+        case "Sau":
+            chineseZodiacInfo = "Sau.\nFødselsår(1919, 1931, 1943, 1955, 1967, 1979, 1991, 2003, 2015).\nNeste år av sauen 2027.\nPersonlighet:\n (Snill, Tålmodig, Overbevisende, Mild, Engstelig).\nKompatibel med Hest.\nMinst kompatibel med: Okse."
+      
+        case "Ape":
+            chineseZodiacInfo = "Ape.\nFødselsår(1920, 1932, 1944, 1956, 1968, 1980, 1992, 2004, 2016).\nNeste år av Apen er  2028.\nPersonlighet:\n (Intelligent, Påvirkende, Nysgjerrig Tålmodig).\nMest kompatibel med Slange\nMinst kompatibel med Tiger."
+             
         default:
             break
         }
@@ -53,20 +55,20 @@ extension ChineseZodiacDetailView {
     
     func chineseElementInfo(chElementText:String) {
         switch chElementText {
-        case "Metal":
-            chineseElementInfo = "Metal.\nBirth years: Last number of your birth is\n0 or 1.\nAssociated with: Solidity And Willpower."
+        case "Metall":
+            chineseElementInfo = "Metall.\nFødselsår: Siste fødselsnummer er\n0 eller 1.\nAsosiert med: Soliditet og viljestyrke."
                         
-        case "Water":
-            chineseElementInfo = "Water.\nBirth years: Last number of your birth is\n2 or 3.\nAssociated with: Responsiveness And Persuasion”"
+        case "Vann":
+            chineseElementInfo = "Vann.\nFødselsår: Siste fødselsnummer er\n2 eller 3.\nAsosiert med: Respons og overtalelse"
             
-        case "Wood":
-            chineseElementInfo = "Wood.\nBirth years: Last number of your birth is\n4 or 5.\nAssociated with: Imagination And Creativity"
+        case "Tre":
+            chineseElementInfo = "Tre.\nFødselsår: Siste fødselsnummer er\n4 eller 5.\nAsosiert med: Fantasi og kreativitet"
        
-        case "Fire":
-            chineseElementInfo = "Fire.\nBirth years: Last number of your birth is\n6 or 7.\nAssociated with: Passion, And Bursts Of Dynamic Energy”"
+        case "Ild":
+            chineseElementInfo = "Ild.\nFødselsår: Siste fødselsnummer er\n6 eller 7.\nAsosiert med: lidenskap og utbrudd av dynamisk energi"
        
-        case "Earth":
-            chineseElementInfo = "Earth.\nBirth years: Last number of your birth is\n8 or 9.\nAssociated with: Down-To-Earth Qualities That Encourage Focus And Commitment To Achieving Goals.”"
+        case "Jord":
+            chineseElementInfo = "Jord.\nFødselsår: Siste fødselsnummer er\n8 eller 9.\nAsosiert med: Jordnære egenskaper som oppmuntrer til fokus og forpliktelse til å nå mål."
        
         default:
             break

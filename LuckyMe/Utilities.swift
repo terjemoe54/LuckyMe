@@ -226,40 +226,40 @@ extension MainView {
         if !isValidDate {starSign = ""
         
         } else if ((Int(bMnd) == 03) && (Int(bDay) ?? 00 >= 21)) || ((Int(bMnd) == 04) && (Int(bDay) ?? 00 <= 19)){
-            starSign = "Aries"
+            starSign = "Væren"
             
         } else if ((Int(bMnd) == 04) && (Int(bDay) ?? 00 >= 20)) || ((Int(bMnd) == 05) && (Int(bDay) ?? 00 <= 20)){
-            starSign = "Taurus"
+            starSign = "Tyren"
             
         } else if ((Int(bMnd) == 05) && (Int(bDay) ?? 00 >= 21)) || ((Int(bMnd) == 06) && (Int(bDay) ?? 00 <= 21)){
-            starSign = "Gemini"
+            starSign = "Tvillingene"
             
         } else if ((Int(bMnd) == 06) && (Int(bDay) ?? 00 >= 22)) || ((Int(bMnd) == 07) && (Int(bDay) ?? 00 <= 22)){
-            starSign = "Cancer"
+            starSign = "Krepsen"
         
         } else if ((Int(bMnd) == 07) && (Int(bDay) ?? 00 >= 23)) || ((Int(bMnd) == 08) && (Int(bDay) ?? 00 <= 22)){
-            starSign = "Leo"
+            starSign = "Løven"
             
         } else if ((Int(bMnd) == 08) && (Int(bDay) ?? 00 >= 23)) || ((Int(bMnd) == 09) && (Int(bDay) ?? 00 <= 22)){
-            starSign = "Virgo"
+            starSign = "Jomfruen"
             
         } else if ((Int(bMnd) == 09) && (Int(bDay) ?? 00 >= 23)) || ((Int(bMnd) == 10) && (Int(bDay) ?? 00 <= 23)){
-            starSign = "Libra"
+            starSign = "Vekten"
             
         } else if ((Int(bMnd) == 10) && (Int(bDay) ?? 00 >= 24)) || ((Int(bMnd) == 11) && (Int(bDay) ?? 00 <= 21)){
-            starSign = "Scorpio"
+            starSign = "Skorpionen"
             
         } else if ((Int(bMnd) == 11) && (Int(bDay) ?? 00 >= 22)) || ((Int(bMnd) == 12) && (Int(bDay) ?? 00 <= 21)){
-            starSign = "Sagittarius"
+            starSign = "Skytten"
        
         } else if ((Int(bMnd) == 12) && (Int(bDay) ?? 00 >= 22)) || ((Int(bMnd) == 01) && (Int(bDay) ?? 00 <= 19)){
-            starSign = "Capricorn"
+            starSign = "Steinbukken"
             
         } else if ((Int(bMnd) == 01) && (Int(bDay) ?? 00 >= 20)) || ((Int(bMnd) == 02) && (Int(bDay) ?? 00 <= 18)){
-            starSign = "Aquarius"
+            starSign = "Vannmannen"
             
         } else if ((Int(bMnd) == 02) && (Int(bDay) ?? 00 >= 19)) || ((Int(bMnd) == 03) && (Int(bDay) ?? 00 <= 20)){
-            starSign = "Pisces"
+            starSign = "Fiskene"
           }
     }
     
@@ -268,43 +268,43 @@ extension MainView {
         if !isValidDate {starSign = ""
             
         } else if ((Int(bMnd) == 04) && (Int(bDay) ?? 00 >= 18)) || ((Int(bMnd) == 05) && (Int(bDay) ?? 00 <= 13)){
-            starSign = "Aries"
+            starSign = "Væren"
             
         } else if ((Int(bMnd) == 05) && (Int(bDay) ?? 00 >= 14)) || ((Int(bMnd) == 06) && (Int(bDay) ?? 00 <= 21)){
-            starSign = "Taurus"
+            starSign = "Tyren"
             
         } else if ((Int(bMnd) == 06) && (Int(bDay) ?? 00 >= 22)) || ((Int(bMnd) == 07) && (Int(bDay) ?? 00 <= 20)){
-            starSign = "Gemini"
+            starSign = "Tvillingene"
             
         } else if ((Int(bMnd) == 07) && (Int(bDay) ?? 00 >= 21)) || ((Int(bMnd) == 08) && (Int(bDay) ?? 00 <= 10)){
-            starSign = "Cancer"
+            starSign = "Krepsen"
             
         } else if ((Int(bMnd) == 08) && (Int(bDay) ?? 00 >= 11)) || ((Int(bMnd) == 09) && (Int(bDay) ?? 00 <= 16)){
-            starSign = "Leo"
+            starSign = "Løven"
             
         } else if ((Int(bMnd) == 09) && (Int(bDay) ?? 00 >= 17)) || ((Int(bMnd) == 10) && (Int(bDay) ?? 00 <= 30)){
-            starSign = "Virgo"
+            starSign = "Jomfruen"
             
         } else if ((Int(bMnd) == 10) && (Int(bDay) ?? 00 >= 31)) || ((Int(bMnd) == 11) && (Int(bDay) ?? 00 <= 23)){
-            starSign = "Libra"
+            starSign = "Vekten"
             
         } else if ((Int(bMnd) == 11) && (Int(bDay) ?? 00 >= 24)) && ((Int(bMnd) == 11) && (Int(bDay) ?? 00 <= 28)){
-            starSign = "Scorpio"
+            starSign = "Skorpionen"
            
         } else if ((Int(bMnd) == 11) && (Int(bDay) ?? 00 >= 29)) || ((Int(bMnd) == 12) && (Int(bDay) ?? 00 <= 18)){
-            starSign = "Ophiuchus"
+            starSign = "Slangebæreren"
             
         } else if ((Int(bMnd) == 12) && (Int(bDay) ?? 00 >= 19)) || ((Int(bMnd) == 01) && (Int(bDay) ?? 00 <= 20)){
-            starSign = "Sagittarius"
+            starSign = "Skytten"
             
         } else if ((Int(bMnd) == 01) && (Int(bDay) ?? 00 >= 21)) || ((Int(bMnd) == 02) && (Int(bDay) ?? 00 <= 16)){
-            starSign = "Capricorn"
+            starSign = "Steinbukken"
             
         } else if ((Int(bMnd) == 02) && (Int(bDay) ?? 00 >= 17)) || ((Int(bMnd) == 03) && (Int(bDay) ?? 00 <= 11)){
-            starSign = "Aquarius"
+            starSign = "Vannmannen"
             
         } else if ((Int(bMnd) == 03) && (Int(bDay) ?? 00 >= 12)) || ((Int(bMnd) == 04) && (Int(bDay) ?? 00 <= 17)){
-            starSign = "Pisces"
+            starSign = "Fiskene"
             
             }
     }
@@ -314,25 +314,25 @@ extension MainView {
         
         switch chElement {
         case 0:
-            chElementText = "Metal"
+            chElementText = "Metall"
         case 1:
-            chElementText = "Metal"
+            chElementText = "Metall"
         case 2:
-            chElementText = "Water"
+            chElementText = "Vann"
         case 3:
-            chElementText = "Water"
+            chElementText = "Vann"
         case 4:
-            chElementText = "Wood"
+            chElementText = "Tre"
         case 5:
-            chElementText = "Wood"
+            chElementText = "Tre"
         case 6:
-            chElementText = "Fire"
+            chElementText = "Ild"
         case 7:
-            chElementText = "Fire"
+            chElementText = "Ild"
         case 8:
-            chElementText = "Earth"
+            chElementText = "Jord"
         case 9:
-            chElementText = "Earth"
+            chElementText = "Jord"
             
         default:
             break
@@ -346,29 +346,29 @@ extension MainView {
         if pnr == "25017721022" {chZodiac -= 1}
         switch chZodiac {
         case 1:
-            chZodiacText = "Roster"
+            chZodiacText = "Hane"
         case 2:
-            chZodiacText = "Dog"
+            chZodiacText = "Hund"
         case 3:
-            chZodiacText = "Pig"
+            chZodiacText = "Gris"
         case 4:
-            chZodiacText = "Rat"
+            chZodiacText = "Rotte"
         case 5:
-            chZodiacText = "Ox"
+            chZodiacText = "Okse"
         case 6:
             chZodiacText = "Tiger"
         case 7:
-            chZodiacText = "Rabbit"
+            chZodiacText = "Kanin"
         case 8:
-            chZodiacText = "Dragon"
+            chZodiacText = "Drage"
         case 9:
-            chZodiacText = "Snake"
+            chZodiacText = "Slange"
         case 10:
-            chZodiacText = "Horse"
+            chZodiacText = "Hest"
         case 11:
-            chZodiacText = "Sheep"
+            chZodiacText = "Sau"
         default:
-            chZodiacText = "Monkey"
+            chZodiacText = "Ape"
         }
     }
     
