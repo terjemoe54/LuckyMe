@@ -366,7 +366,7 @@ extension MainView {
         case 10:
             chZodiacText = "Hest"
         case 11:
-            chZodiacText = "Sau"
+            chZodiacText = "Geit"
         default:
             chZodiacText = "Ape"
         }
