@@ -12,10 +12,10 @@ extension ChineseZodiacDetailView {
     func chineseZodiacInfo(chZodiacText:String) {
         switch chZodiacText {
         case "Hane":
-            chineseZodiacInfo = "Hane.\nFødselsår(1921, 1933, 1945, 1957, 1969, 1981, 1993, 2005, 2017).\nNeste år av Hanen 2029.\nPersonlighet:\n (Empatisk, Religiøs). kompatibel med Dragen.\nMinst kompatibel med: Kanin."
+            chineseZodiacInfo = "Hane.\nFødselsår(1921, 1933, 1945, 1957, 1969, 1981, 1993, 2005, 2017).\nNeste år av Hanen 2029.\n\nPersonlighet:\n(ærlige, presise, observante, flittige, modige, stilige og litt edle, med en sterk sans for organisering, humor og selvtillit, men kan også være bryske og kritiske).\n\nKompatibel med Oksen, Slangen, og Dragen.\nMinst kompatibel med: Hare."
                         
         case "Hund":
-            chineseZodiacInfo = "Hund.\nFødselsår(1934, 1946, 1958, 1970, 1982, 1994, 2006, 2018).\nNeste år av Hunden 2030.\nPersonlighet:\n (lojal, ærlig, sjenerøs,leken, sta).\n, kompatibel med Kanin.\nMinst kompatibel med: Drage."
+            chineseZodiacInfo = "Hund.\nFødselsår(1934, 1946, 1958, 1970, 1982, 1994, 2006, 2018).\nNeste år av Hunden 2030.\nPersonlighet:\n (lojal, ærlig, sjenerøs,leken, sta).\n, kompatibel med Hare.\nMinst kompatibel med: Drage."
             
         case "Gris":
             chineseZodiacInfo = "Gris.\nFødselsår(1935, 1947, 1959, 1971, 1983, 1995, 2007, 2019).\nNeste år av grisen 2031.\nPersonlighet\n (glad, sjenerøs, logisk, kjærlig, hissig).\n, kompatibel med Tiger.\nMinst kompatibel med Slange."
@@ -30,8 +30,8 @@ extension ChineseZodiacDetailView {
         case "Tiger":
             chineseZodiacInfo = "Tiger.\nFødselsår(1914, 1926, 1938, 1950, 1962, 1974, 1986, 1998, 2010, 2022).\nNeste år av Tiger 2034).\nPersonlighet:\n (Nyskjerrig, Selvsikker,Eventyrlysten, Egoistisk).\nMest kompatibel med Gris.\nMinst kompatibel med Ape."
               
-        case "Kanin":
-            chineseZodiacInfo = "Kanin.\nFødselsår(1915, 1927, 1939, 1951, 1963, 1975, 1987, 1999, 2011, 2023).\nNeste år av kaninen 2035.\nPersonlighet:\n kjærlig, intelligent, nøysom, heldig).\nMest kompatibel med Dog.\nMinst kompatibel med Hane."
+        case "Hare":
+            chineseZodiacInfo = "Hare.\nFødselsår(1915, 1927, 1939, 1951, 1963, 1975, 1987, 1999, 2011, 2023).\nNeste år av kaninen 2035.\nPersonlighet:\n kjærlig, intelligent, nøysom, heldig).\nMest kompatibel med Dog.\nMinst kompatibel med Hane."
                 
         case "Drage":
             chineseZodiacInfo = "Drage.\nFødselsår(1928, 1940, 1952, 1964, 1976, 1988, 2000, 2012, 2024).\nNeste år av Dragen 2036.\nPersonlighet:\n (Sterk, Temperamangfull, Ambisiøs, Selvstendig).\nMest kompatibelt med Hane.\nMinst kompatibel med Hund."

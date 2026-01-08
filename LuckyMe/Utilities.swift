@@ -358,7 +358,7 @@ extension MainView {
         case 6:
             chZodiacText = "Tiger"
         case 7:
-            chZodiacText = "Kanin"
+            chZodiacText = "Hare"
         case 8:
             chZodiacText = "Drage"
         case 9:
